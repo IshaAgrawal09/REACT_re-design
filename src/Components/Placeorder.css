@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .placeOrder {
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    margin: 12% 0;
+    /* justify-content: center; */
+  }
+  .placeOrder i {
+    font-size: 25px;
+    color: green;
+    margin: 3% 0;
+  }
+  .placeOrder h1 {
+    font-weight: 500;
+    font-size: 35px;
+    font-family: inherit;
+    margin: 1% 0;
+  }
+  .placeOrder button {
+    margin: 4% 0;
+    padding: 1.5% 3%;
+    background-color: rgb(78, 104, 2);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  

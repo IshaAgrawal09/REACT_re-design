@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.loginDiv {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginMain {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login {
+  background-color: #f8fff9;
+  box-shadow: 1px 1px 6px #808080;
+  padding: 5%;
+  text-align: center;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.homeIcon {
+  position: absolute;
+  left: 3%;
+  top: 0;
+}
+.homeIcon i {
+  cursor: pointer;
+}
+.loginLogo {
+  width: 120px;
+  height: 150px;
+}
+.loginLogo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.login h1 {
+  color: rgb(78, 104, 2);
+  font-family: "DynaPuff", cursive;
+  font-size: 34px;
+  margin-top: 4%;
+}
+.login div {
+  margin-top: 8%;
+}
+.login input {
+  width: 90%;
+  margin: 3% 0;
+  border: none;
+  border-bottom: 1px solid #808080;
+  padding: 4% 2%;
+  background-color: transparent;
+}
+.login input::placeholder {
+  color: black;
+}
+.login input:focus {
+  outline: none;
+}
+.login i {
+  margin-right: 1%;
+  /* color: #808080; */
+}
+.login p {
+  margin-top: 9%;
+}
+.login p a {
+  color: rgb(78, 104, 2);
+  font-weight: 600;
+}
+.login button {
+  margin-top: 12%;
+  width: 100%;
+  padding: 4.8% 3%;
+  background-color: rgb(78, 104, 2);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+#error {
+  color: red;
+  margin: 0 !important;
+}
+@media (max-width: 430px) {
+  .login h1 {
+    margin-top: 10%;
+  }
+}

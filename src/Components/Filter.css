@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.filterMain {
+  position: fixed;
+  width: 20%;
+  max-width: 252px;
+  overflow: hidden;
+  z-index: 999;
+}
+.filterMain h2 {
+  font-size: 20px;
+  padding: 6% 2%;
+  font-weight: 500;
+}
+.filterMain ul {
+  /* width: 80%; */
+  margin: 4% 3%;
+}
+.filterMain li {
+  list-style-type: none;
+  padding: 2% 0 6%;
+  margin: 7% 0 10%;
+  border-bottom: 1px solid #eee;
+}
+.filterMain li button {
+  padding: 0;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+.filterMain li button {
+  padding: 0;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.filterMain li button {
+  color: gray;
+}
+.active {
+  color: black !important;
+}
+
+@media (max-width:500px){
+  .filterMain h2 {
+    font-size: 17px;
+    
+  }
+}
+/* @media (max-width:492px){
+  .filterMain{
+    width: 30%;
+    max-width: 378px;
+  }
+} */

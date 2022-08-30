@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainProduct {
+  width: 80%;
+  margin-left: 20%;
+  border: 1px solid #eee;
+}
+.productLine {
+  padding: 1% 0.5%;
+}
+.productLine span {
+  color: rgba(82, 107, 7, 0.98);
+  font-weight: 500;
+}
+.productLine #red {
+  background-color: red;
+  color: white;
+  margin: 0 2%;
+  padding: 0.5%;
+}
+.productImage {
+  width: 100%;
+}
+.productImage img {
+  width: 99%;
+  text-align: center;
+}
+
+/* PRODUCT LIST  */
+.ProductList {
+  padding-bottom: 4%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* box-shadow: 1px 1px 6px #808080; */
+}
+.singleProduct {
+  border-right: 1px solid #eee;
+  cursor: pointer;
+  width: 33.33%;
+  margin: 4% 0 0 0;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.singleProduct .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 3%;
+}
+.singleProduct .image-card {
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.singleProduct img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  margin-bottom: 3%;
+  vertical-align: bottom;
+  position: relative;
+  padding-top: 10%;
+}
+.container:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.singleProduct span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #51aa1b;
+  font-weight: 600;
+  border-radius: 0 0 4px 4px;
+  padding: 1%;
+}
+
+.singleProduct h4 {
+  margin: 3% 0;
+  padding: 2% 0;
+  font-weight: 300;
+  font-size: 19px;
+}
+.singleproductInfo {
+  margin-top: auto;
+  margin-bottom: 3%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+#unit {
+  text-align: center;
+  border: 1px solid #d6b488;
+  padding: 2.3%;
+  color: #e2ac6b;
+  font-weight: 600;
+}
+#prevAmount {
+  color: red;
+}
+#productprice {
+  color: #6a8a0a;
+  font-weight: 600;
+}
+.singleProduct p {
+  margin: 8% 2% 10%;
+}
+.quantityAddCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.increase {
+  margin: 2% 0;
+  width: 50%;
+}
+#addCart {
+  width: 90%;
+  margin-left: 5%;
+}
+#addCart button {
+  /* border: 1px solid rgb(126, 169, 233); */
+  background-color: rgba(236, 30, 30, 0.93);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+
+  padding: 3.4% 0 2%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  margin: auto;
+}
+.quantity {
+  border: 1px solid #252525;
+  border-radius: 50%;
+  padding: 4%;
+  margin: 2%;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+#modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background-color: #eee;
+  padding: 4%;
+  border-radius: 7px;
+}
+.modalChild {
+  display: flex;
+  align-items: center;
+}
+.modalImage {
+  width: 50%;
+  height: 180px;
+}
+.modalImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+.modalContent {
+  margin-left: 4%;
+}
+.modalContent h4 {
+  margin: 4% 0;
+}
+#reviews i {
+  color: rgb(235, 206, 44);
+  margin: 6% 0;
+}
+
+.modalContent p span {
+  color: gray;
+  margin-right: 6%;
+  color: red;
+}
+#modal:focus {
+  outline: none;
+}
+.mainModal p {
+  margin: 5% 0;
+}
+.mainModal p span {
+  font-weight: 800;
+}
+
+@media (max-width: 682px) {
+  #unit {
+    font-size: 12px;
+  }
+  #prevAmount {
+    font-size: 12px;
+  }
+  #productprice {
+    font-size: 12px;
+  }
+  .singleProduct h4 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 492px) {
+  .singleproductInfo {
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .singleProduct {
+    flex: 0 0 50%;
+  }
+  .productLine #red{
+    display: none;
+  }
+}
